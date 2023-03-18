@@ -1,0 +1,30 @@
+@use "/src/common/styles/templates" as *;
+
+.page__container {
+  @extend %page__container;
+  display: grid;
+  row-gap: 2.5rem;
+  & h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+  }
+  & .form__container {
+    display: grid;
+    row-gap: 2.4rem;
+    & > label {
+      @extend %label;
+    }
+    & > * {
+      @extend %children;
+    }
+
+    & input {
+      @extend %input;
+    }
+
+    & input[type="submit"] {
+      @extend %input__submit;
+    }
+  }
+}
