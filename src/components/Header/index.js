@@ -3,9 +3,9 @@ import { NavLink, Route, Routes } from "react-router-dom";
 import HomePage from "../../pages/HomePage";
 import Forms from "./../Forms";
 import styles from "./Header.module.scss";
-import { FormContext } from "../../App";
 import SignInPage from "../../pages/SignInPage";
 import SignUpPage from './../../pages/SignUpPage';
+import { FormContext } from "../../contexts";
 const Header = () => {
   return (
     <>
